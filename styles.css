@@ -1,14 +1,153 @@
 body {
   background-color: #f0f8ff;
-  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  
+  
+  font-family: "Oxygen", sans-serif;
+  
+  
+}
+
+#header-nav {
+  background-color: grey;
+height: 60px;
+  border-radius: 0;
+  border: 0;
+}
+
+.heading {
+  font-family: "roboto", sans-serif;
+  color: green;
+  font-size: 24px;
+  text-align: center
+  
+
+}
+.nav-link {
+  font-family: "roboto", sans-serif;
+  color: blue;
+  font-size: 18px;
+  text-decoration: none;
+  margin: 30px;
+}
+
+.our-menu {
+  font-family: "roboto", sans-serif;
+  color: black;
+  font-size: 24px;
+  text-align: center;
+}
+.chicken {
+  font-family: "roboto", sans-serif;
+  color: black;
+  font-size: 24px;
   text-align: center;
 }
 
-h1 {
-  color: blue;
+.first-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  margin: auto;
+  width: 300px;
+  background-color: #35393d;
+  border-radius: 10px;
+  padding: 10px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  
 }
 
-p {
-  color: green;
-  font-size: 18px;
+.second-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 400px;
+  margin: auto;
+  width: 300px;
+  background-color: #35393d;
+  border-radius: 10px;
 }
+
+.third-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  margin: auto;
+  width: 300px;
+  padding: 10px;
+  background-color: #35393d;
+  border-radius: 10px;
+}
+
+.full-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  height: 100%;
+ 
+  width: 100vw;
+}
+
+
+@media (max-width: 576px) {
+  .full-container {
+    
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .first-container, .second-container, .third-container {
+    margin: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .full-container {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .first-container, .second-container, .third-container {
+    margin: 20px;
+  }
+}
+.nav-menu {
+  display: flex;
+}
+
+@media  (min-width: 768px) {
+  .nav-menu {
+    display: none;
+    
+  }
+  .heading {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-link {
+    margin: 20px;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+}
+
+
